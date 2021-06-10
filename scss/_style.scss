@@ -2,6 +2,7 @@
 body{
     color: $Wht;
     font-family: 'Roboto', sans-serif;
+    background: $bg-color;
 }
 .container{
     max-width: 1140px;
@@ -93,6 +94,79 @@ color: $Wht;
 }
 }
 }
+.content{
+    display: flex;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 22px;
+.section{
+    flex-basis: 50%;
+    h1{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 21px;
+    }
+    p{
+        margin-bottom: 30px;
+        max-width: 423px;
+    }
+    strong{
+    font-weight: bold;
+}
+.trailer{
+    width: 356px;
+    height: 205px;
+    background: url(../images/trailer-cover.jpg) no-repeat center / contain;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .play.icon-play-watch-trailer{
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        width: 45px;
+        height: 45px;
+        &::before{
+        content: "\e900";
+        width: 15px;
+        height: 15px;
+        }
+    }
+    }
+    }
+}
+.aside{
+    .poster-wrapper{
+        display: flex;
+        align-items: flex-start;
+    .poster{
+        border-radius: 10px;
+        padding-right: 30px;
+    }
+    .creators {
+        strong{
+            font-weight: bold;
+        }
+        .list{
+        margin-bottom: 20px;
+        padding-top: 0;
+        columns: 1;
+    }
+}
+    }
+}
+}
+.list{
+    padding-top: 15px;
+    columns: 2;
+    max-width: 350px;
+    li{
+    line-height: 26px;
+    list-style: none;
+    }
 }
 .venom{
     position: absolute;
@@ -101,4 +175,7 @@ color: $Wht;
 }
 .blood{
     background: url(../images/blood.png) no-repeat top right, $bg-color url(../images/bg.jpg) no-repeat center/100%;  
+}
+.primary-bg{
+    background: $bg-color url(../images/bg.jpg) no-repeat center/100%;  
 }
